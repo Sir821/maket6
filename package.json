@@ -18,8 +18,8 @@
     "scss"
   ],
   "scripts": {
-    "start": "npm run build && serve dist -l 3000",
-    "dev": "npm run copy && parcel src/html/*.html --port 3000",
+    "start": "npm run build && serve dist -l 80",
+    "dev": "npm run copy && parcel src/html/*.html --port 80",
     "build": "npm run copy && parcel build src/html/*.html",
     "copy": "rm -rf dist && mkdir dist && cp src/config/.htaccess src/config/browserconfig.xml src/config/robots.txt dist"
   },
