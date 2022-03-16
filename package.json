@@ -1,19 +1,18 @@
 {
-  "name": "basic-site-template-ts",
+  "name": "maket6",
   "version": "1.0.0",
-  "description": "Site template based on html5 boilerplate with typescript and scss modifications",
+  "description": "",
   "license": "MIT",
-  "author": "async-devil",
+  "author": "Sir821",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/async-devil/basic-site-template-ts.git"
+    "url": "git+https://github.com/Sir821/maket6.git"
   },
   "bugs": {
-    "url": "https://github.com/async-devil/basic-site-template-ts/issues"
+    "url": "https://github.com/Sir821/maket6/issues"
   },
-  "homepage": "https://github.com/async-devil/basic-site-template-ts#readme",
+  "homepage": "https://github.com/Sir821/maket6#readme",
   "keywords": [
-    "template",
     "typescript",
     "scss"
   ],
