@@ -1,0 +1,57 @@
+@import "./widths.scss";
+
+.introduction {
+	display: grid;
+
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 74px;
+
+	place-items: center;
+
+	@media screen and (max-width: $tablet) {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-column-gap: 0;
+	}
+
+	.introduction__text {
+		@media screen and (max-width: $tablet) {
+			text-align: center;
+		}
+
+		h1 {
+			margin-bottom: 20px;
+		}
+
+		p {
+			margin-bottom: 35px;
+		}
+
+		a {
+			margin-bottom: 50px;
+		}
+	}
+
+	.introduction__img {
+		@media screen and (max-width: calc($tablet)) {
+			& {
+				display: none;
+			}
+		}
+
+		img {
+			max-width: 100%;
+			@media screen and (max-width: calc($tablet)) {
+				& {
+					margin-top: 130px;
+				}
+				@media screen and (max-width: calc($mobile)) {
+					& {
+						margin-top: 80px;
+					}
+				}
+			}
+		}
+	}
+}

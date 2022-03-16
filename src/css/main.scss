@@ -1,6 +1,94 @@
-$blue: blue;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-p {
-	font-weight: bold;
-	color: $blue;
+@import "./widths.scss";
+@import "./header.scss";
+@import "./introduction.scss";
+@import "./advantages.scss";
+@import "./get-started.scss";
+@import "./companies.scss";
+
+* {
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	max-width: $desktop;
+
+	margin: 0 auto;
+	padding: 40px;
+
+	@media screen and (max-width: $mobile) {
+		padding: 40px 24px;
+	}
+}
+
+h1 {
+	font-size: 55px;
+	font-weight: 700;
+
+	@media screen and (max-width: $mobile) {
+		font-size: 38px;
+	}
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: 700;
+
+	@media screen and (max-width: $mobile) {
+		font-size: 28px;
+	}
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+h4 {
+	color: #f75c4e;
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-bottom: 6px;
+}
+
+a {
+	color: black;
+}
+
+.button {
+	padding: 12px 45px;
+
+	border-radius: 50px;
+	border: none;
+
+	font-family: "Poppins";
+	font-style: normal;
+	font-size: 16px;
+	line-height: 24px;
+
+	text-align: center;
+}
+
+.button-primary {
+	background: #1f7cff;
+	color: #f5f6fb;
+
+	font-weight: 600;
+
+	&:hover {
+		background: darken($color: #1f7cff, $amount: 20);
+		color: #f5f6fb;
+	}
+}
+
+.button-secondary {
+	background: #f5f6fb;
+
+	font-weight: 400;
+
+	&:hover {
+		background: darken($color: #f5f6fb, $amount: 5);
+	}
 }

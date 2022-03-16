@@ -1,0 +1,90 @@
+@import "./widths.scss";
+
+.get-started {
+	display: grid;
+
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 70px;
+
+	@media screen and (max-width: $tablet) {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.get-started__video {
+		display: flex;
+
+		justify-content: center;
+
+		@media screen and (max-width: $tablet) {
+			margin: 0 0 51px 0;
+		}
+
+		img {
+			max-width: 100%;
+
+			border-radius: 40px;
+		}
+	}
+}
+
+.get-started__text {
+	@media screen and (max-width: $tablet) {
+		text-align: center;
+	}
+
+	@media screen and (max-width: $mobile) {
+		text-align: center;
+	}
+
+	h4 {
+		margin-bottom: 6px;
+	}
+
+	h2 {
+		margin-bottom: 20px;
+	}
+
+	p {
+		margin-bottom: 40px;
+	}
+
+	form {
+		display: grid;
+
+		grid-template-columns: 1fr 200px;
+		grid-template-rows: 1fr;
+
+		@media screen and (max-width: $mobile) {
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(2, 1fr);
+			grid-row-gap: 12px;
+		}
+
+		input {
+			background: #f5f6fb;
+
+			border: none;
+			border-radius: 50px;
+
+			padding: 12px 24px;
+
+			&:focus {
+				border: none;
+			}
+		}
+
+		button {
+			position: relative;
+			right: 90px;
+		}
+
+		@media screen and (max-width: $mobile) {
+			button {
+				position: relative;
+				left: 0px;
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+@import "./widths.scss";
+
+header {
+	display: flex;
+
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 84px;
+
+	.header__logo {
+		display: flex;
+
+		img {
+			margin-right: 12px;
+		}
+
+		h2 {
+			font-size: 28px;
+		}
+	}
+
+	nav {
+		@media screen and (max-width: $tablet) {
+			display: none;
+		}
+
+		a {
+			margin-right: 60px;
+		}
+
+		.active {
+			font-weight: 700;
+		}
+	}
+
+	.header__sign-in {
+		@media screen and (max-width: calc($mobile + 1px)) {
+			display: none;
+		}
+		.button-secondary {
+			a {
+				padding: 12px;
+			}
+		}
+	}
+}
