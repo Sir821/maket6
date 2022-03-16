@@ -22,9 +22,11 @@
     "dev": "npm run copy && parcel src/html/*.html --port 80",
     "build": "npm run copy && parcel build src/html/*.html",
     "copy": "rm -rf dist && mkdir dist && cp src/config/.htaccess src/config/browserconfig.xml src/config/robots.txt dist",
-    "fix": "rm -rf .parcel-cache/ && rm -rf dist/"
+    "fix": "rm -rf .parcel-cache/ && rm -rf dist/",
+    "deploy": "rm -rf dist && npm run buid && gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "parcel": "^2.0.1",
     "serve": "^13.0.2"
   },
