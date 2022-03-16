@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/Sir821/maket6/issues"
   },
-  "homepage": "https://github.com/Sir821/maket6#readme",
+  "homepage": "https://github.com/Sir821/maket6/",
   "keywords": [
     "typescript",
     "scss"
@@ -19,10 +19,10 @@
   "scripts": {
     "start": "npm run build && serve dist -l 80",
     "dev": "npm run copy && parcel src/html/*.html --port 80",
-    "build": "npm run copy && parcel build src/html/*.html",
+    "build": "npm run copy && parcel build src/html/index.html --public-url https://sir821.github.io/maket6/",
     "copy": "rm -rf dist && mkdir dist && cp src/config/.htaccess src/config/browserconfig.xml src/config/robots.txt dist",
     "fix": "rm -rf .parcel-cache/ && rm -rf dist/",
-    "deploy": "rm -rf dist && npm run buid && gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^3.2.3",
